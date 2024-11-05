@@ -179,7 +179,6 @@ function getParallelepipedDiagonal(a, b, c) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen(num, pow) {
-  // return Math.round(num / pow) * pow;
   return Math.round(num / 10 ** pow) * 10 ** pow;
 }
 
@@ -408,9 +407,7 @@ function toPrecision(number, precision) {
  * Number(-5)    => -5
  */
 function getNumberValue(number) {
-  // return Number.prototype.valueOf(number);
   return number.valueOf();
-  // return +number;
 }
 
 /**
@@ -429,10 +426,7 @@ function getNumberValue(number) {
  * '5'      => false
  */
 function isNumber(number) {
-  // return typeof number === 'number';
-  // return typeof number === 'number';
   return Number.isFinite(number);
-  // return number instanceof Number;
 }
 
 /**
@@ -461,7 +455,6 @@ function isInteger(number) {
  * 'abcdefgh'      => NaN
  */
 function getFloatOnString(str) {
-  // return parseInt(str, 10);
   return Number.parseFloat(str);
 }
 
@@ -601,7 +594,6 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -1, 1 => -1 | 0 | 1
  */
 function getRandomInteger(min, max) {
-  // return Math.random() * (max - min) + min;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
